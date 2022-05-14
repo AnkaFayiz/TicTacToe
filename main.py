@@ -32,46 +32,43 @@ def runGame():
         if BOARD[0] == BOARD[1] == BOARD[2] != '-':
             printBoard(BOARD)
             print(f"{turn} won!")
-            isWin = True
             break
+        
         elif BOARD[3] == BOARD[4] == BOARD[5] != '-':
             printBoard(BOARD)
             print(f"{turn} won!")
-            isWin = True
             break
+        
         elif BOARD[6] == BOARD[7] == BOARD[8] != '-':
             printBoard(BOARD)
             print(f"{turn} won!")
-            isWin = True
             break
 
         # check column
         if BOARD[0] == BOARD[3] == BOARD[6] != '-':
             printBoard(BOARD)
             print(f"{turn} won!")
-            isWin = True
             break
+        
         elif BOARD[1] == BOARD[4] == BOARD[7] != '-':
             printBoard(BOARD)
             print(f"{turn} won!")
-            isWin = True
             break
+        
         elif BOARD[2] == BOARD[5] == BOARD[8] != '-':
             printBoard(BOARD)
             print(f"{turn} won!")
-            isWin = True
             break
 
         # Check Diagonal
         if BOARD[0] == BOARD[4] == BOARD[8] != '-':
             printBoard(BOARD)
             print(f"{turn} won!")
-            isWin = True
             break
+        
         elif BOARD[2] == BOARD[4] == BOARD[6] != '-':
             printBoard(BOARD)
             print(f"{turn} won!")
-            isWin = True
             break
         
         if count == 9:
